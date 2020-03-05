@@ -4,9 +4,9 @@ package temp;
 import java.util.*;
 
 /**
- * 1、统计字母出现的次数并按照字母频率从高到低输出
+ * 统计字母出现的次数并按照字母频率从高到低输出
  */
-public class Demo2 {
+public class DemoCountLetter {
     public static void main(String[] args) {
         //String data ="aaavzadfsdfsdhshdWashfasdf";
         String data = "aaaabbbbDDDeeeeeccccc";

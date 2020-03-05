@@ -17,7 +17,6 @@ public class HelloWorld {
                 String result = findLongestSubstring(a, b);
                 System.out.println("result:"+result.length());
             }
-
         }
     }
 
@@ -119,12 +118,17 @@ public class HelloWorld {
                     result=0;
                 }
             }
-
         }
         return result;
     }
 
-
+    /**
+     * 计算两个字符串最长重复字符的长度
+     * @param s1
+     * @param s2
+     *  例如：s1:adccscd   s2:scdccs   最长重复字符为：dccs 所以结果应该为：4
+     * @return
+     */
     public static String findLongestSubstring(String s1, String s2) {
         //不同的三元表达式，是为了避免相同长度字符串的问题
         String max = s1.length() >= s2.length() ? s1 : s2;
@@ -132,7 +136,7 @@ public class HelloWorld {
 
         int longest = 0;//记录每次循环得到的最长子串长度
         String longestString = "";
-        //这里使用短字符串，可降低时间复杂度
+        //这里先循环短字符串，可降低时间复杂度
         for (int i = 0; i < min.length(); i++) {
             for (int j = i + 1; j <= min.length(); j++) {
                 if (max.contains(min.substring(i, j)) && j - i > longest) {

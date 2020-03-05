@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * @author zcj
  * @date 2020/1/911:23
- * 回文
+ * 递归的应用--回文
  */
 public class DemoHuiwen {
     public static void main(String[] args) {

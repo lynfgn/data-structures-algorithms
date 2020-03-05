@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * @author zcj
  * @date 2020/1/817:34
- * 杨辉三角
+ * 递归的应用--杨辉三角
  */
 public class DemoYangHui {
     public static void main(String[] args) {
