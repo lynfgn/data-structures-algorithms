@@ -24,34 +24,16 @@ public class DemoCountLetter {
             System.out.println(me.getKey()+"\t" + me.getValue());
         }
 
-        LinkedList<Character> list=new LinkedList<Character>();
         List<Map.Entry<Character, Integer>> listResult=new ArrayList<Map.Entry<Character,Integer>>();
-        Map<Character,Integer> sortMap = new HashMap<>();
-        int max=0;
       for(Map.Entry<Character, Integer> me:countMap.entrySet()){
-            /*if(me.getValue()<max){
-                continue;
-            }
-            if(me.getValue()==max){
-                list.add(me.getKey());
-            }
-            if(me.getValue()>max){
-                list.clear();
-                max=me.getValue();
-                list.add(me.getKey());
-            }*/
             listResult.add(me);
         }
         Collections.sort(listResult,new MyEntryComparator());
-        //countMap.remove(list)
         System.out.println("++++++++++++++++++++++++++");
 
         for (Map.Entry<Character, Integer> obj : listResult) {
             System.out.println(obj.getKey() + "\t" + obj.getValue());
         }
-        /*for(Character c:list){
-            System.out.println(c+"\t" + max);
-        }*/
     }
 }
 
