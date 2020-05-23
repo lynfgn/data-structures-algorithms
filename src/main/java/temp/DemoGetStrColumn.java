@@ -18,6 +18,7 @@ public class DemoGetStrColumn {
         String s = dealStr(str, index);
         System.out.println("结果为："+s);
         //得
+        //第二此提交测试
     }
 
     public static String dealStr(String str,int index){
